@@ -5,8 +5,11 @@ class Complex{
     int a,b;
     public:
     void setData(int p,int q );
-    void showData();
+    void showData(); 
     Complex add(Complex);
+    Complex(){
+        cout <<"Helloworld ";
+    }
     
 
 
@@ -21,11 +24,9 @@ void Complex::showData(){
 }
 Complex Complex::add(Complex C){
     Complex temp;
-   temp.a =  a+C.a;
+    temp.a =  a+C.a;
     temp.b = b+C.b;
     return temp;
-
-
 }
 int main(){
     Complex c1,c2,c3;
